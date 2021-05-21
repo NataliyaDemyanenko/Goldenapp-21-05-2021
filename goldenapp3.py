@@ -132,12 +132,11 @@ def goldenapp():
                  excluded[k] += parties[j]
                  print(k, excluded[k])
 
-     for k in range(0, party_num):
-         print(k, line[k])
      #Add back connections with parties with unknown political position
      for k in range(0, party_num):
          if line[k] == 2:
              excluded[k].remove
+             print(k, excluded[k])
 
      label = dict(zip(parties,labels))  
      color = dict(zip(parties,colors))
